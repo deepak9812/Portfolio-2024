@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5% 2.4%;
+    z-index: 999;
+  }
+  
+  h2, h3 {
+    text-transform: uppercase;
+  }
+  
+  header .logo {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-family: 'League Gothic', sans-serif;
+  }
+
+  .desktop {
+    display: block;
+    font-family: 'League Gothic', sans-serif;
+  
+    ul{
+      display: flex;
+
+      li{
+        a{
+            text-decoration: none;
+        }
+      }
+    }
+  
+    ul > * + * {
+      margin-left: 3em;
+    }
+  
+  
+    .nav{
+      color: white;
+      font-size: 1.8rem;
+    }
+  }
+
+.project{
+    margin-top: 10%;
+    padding: 0% 2%;
+    text-align: center;
+
+    .proj{
+
+        h1{
+            font-family: 'League Gothic', sans-serif;
+            text-align: center;
+            font-size: 220px;
+            text-transform: uppercase;
+            color: white;
+            margin: 0% 0%;
+        }
+    }
+
+      img{
+        width: 100%;
+        padding: 2% 0%;
+      }
+}
+
+.m-scroll {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 28vh;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+  
+      &__title {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100%;
+      white-space: nowrap;
+      transform: scale(2);
+      transition: all 10s ease;
+      & > div {
+        display: flex;
+        animation: scrollText 100s infinite linear;
+      }
+      h1 {
+        font-family: 'League Gothic', sans-serif;
+        letter-spacing: 1px;
+        font-size: 64px;
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+        color: #ffffff;
+        }
+    }
+  }
+  
+  /*div:hover {
+    animation-play-state: paused;
+  }*/
+  @keyframes scrollText {
+    from   { transform: translateX(0%); }
+    to { transform: translateX(-80%); }
+  }
+
+  .flex{
+    display: flex;
+    padding: 0% 2%;
+
+    .left-flex{
+        flex-basis: 50%;
+
+        a{
+            font-family: 'League Gothic', sans-serif;
+            font-size: 84px;
+            color: #FF7A00;
+            text-decoration: none;
+        }
+    }
+
+    .right-flex{
+        flex-basis: 50%;
+        text-align: right;
+
+        a{
+            font-family: 'League Gothic', sans-serif;
+            font-size: 84px;
+            color: #FF7A00;
+            text-decoration: none;
+        }
+    }
+  }
+
+.con{
+    width: 100%;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    margin: 6% 0%;
+  
+    img{
+      width: 24%;
+      margin: -3% 0%;
+    }
+    h2{
+      font-size: 16px;
+    }
+  
+    a{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 140px;
+    color: #FAFF00;
+    text-decoration: none;
+    }
+  
+    .social{
+      margin: 4% 0%;
+  
+      a{
+        font-family: 'Source Code Pro', monospace;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: white;
+        padding: 0% 2%;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    .con{
+  
+      a{
+      font-family: 'League Gothic', sans-serif;
+      font-size: 110px;
+      color: #FAFF00;
+      } 
+    }
+  
+    .m-scroll {
+  
+        h1 {
+          font-size: 64px;
+          }
+      } 
+    
+  }
+
+@media (max-width: 800px) {
+
+    header .logo {
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.4rem;
+      font-family: 'League Gothic', sans-serif;
+    }
+    
+    .desktop {
+      display: block;
+      font-family: 'League Gothic', sans-serif;
+    
+      ul{
+        display: flex;
+      }
+    
+      ul > * + * {
+        margin-left: 2em;
+      }
+    
+    
+      .nav{
+        color: white;
+        font-size: 1.4rem;
+      }
+    }
+
+
+.project{
+
+    .proj{
+
+        h1{
+            font-size: 120px;
+        }
+    }
+}
+  
+    .m-scroll {
+      width: 100%;
+      height: 26vh;
+  
+        h1 {
+          font-size: 48px;
+          }
+      }  
+
+      .flex{
+    
+        .left-flex{
+    
+            a{
+                font-size: 64px;
+            }
+        }
+    
+        .right-flex{
+    
+            a{
+                font-size: 64px;
+            }
+        }
+      }
+  
+      .con{
+        h2{
+          font-size: 14px;
+        }
+      
+        a{
+        font-size: 80px;
+        }
+  
+        .social{
+      
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    
+  }
+
+@media (max-width: 600px) {
+
+    .project{
+    
+        .proj{
+    
+            h1{
+                font-size: 180px;
+            }
+    
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    header .logo {
+      font-size: 1.2rem;
+    }
+    
+    .desktop {
+    
+      ul{
+        display: flex;
+      }
+    
+      ul > * + * {
+        margin-left: 2em;
+      }
+    
+    
+      .nav{
+        font-size: 1.2rem;
+      }
+    }
+
+    .project{
+        margin: 20% 0%;
+
+        .proj{
+    
+            h1{
+                font-size: 84px;
+            }
+        }
+    }
+  
+    .m-scroll {
+      width: 100%;
+      height: 22vh;
+      margin-top: -16%;
+  
+        h1 {
+          font-size: 36px;
+          }
+      }  
+
+      .flex{
+    
+        .left-flex{
+    
+            a{
+                font-size: 36px;
+            }
+        }
+    
+        .right-flex{
+    
+            a{
+                font-size: 36px;
+            }
+        }
+      }
+  
+      .con{
+        h2{
+          font-size: 14px;
+        }
+      
+        a{
+        font-size: 42px;
+        }
+  
+        .social{
+      
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    
+}
+
+
+@media (max-width: 400px) {
+
+    .project{
+        margin: 30% 0%;
+    
+        .proj{
+    
+            h1{
+                font-size: 64px;
+            }
+    
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .m-scroll {
+        margin-top: -36%;
+    }
+    
+}
+
+@media (max-width: 320px) {
+
+    .project{
+    
+        .proj{
+    
+            h1{
+                font-size: 48px;
+            }
+    
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .m-scroll {
+        width: 100%;
+        height: 16vh;
+        margin-top: -24%;
+    
+          h1 {
+            font-size: 32px;
+            }
+        }  
+    
+    .con{
+        h2{
+          font-size: 14px;
+        }
+      
+        a{
+        font-size: 36px;
+        }
+  
+        .social{
+      
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+}

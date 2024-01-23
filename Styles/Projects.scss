@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5% 2.4%;
+  z-index: 999;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+header .logo {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: 'League Gothic', sans-serif;
+}
+
+.desktop {
+  display: block;
+  font-family: 'League Gothic', sans-serif;
+
+  ul{
+    display: flex;
+  }
+
+  ul > * + * {
+    margin-left: 3em;
+  }
+
+
+  .nav{
+    color: white;
+    font-size: 1.8rem;
+  }
+}
+
+
+.all{
+  margin-top: 65%;
+
+}
+.projects{
+
+  .sub{
+    display: flex;
+  }
+
+  h1{
+    color: white;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 360px;
+    text-align: center;
+    margin: 8% 0%;
+  }
+
+  .p-flex{
+    display: flex;
+  
+    .left-flex{
+      flex-basis: 50%;
+      margin: 0% 2%;
+
+      p{
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        color: white;
+      }
+  
+      img{
+        width: 100%;
+      }
+    }
+  
+    .right-flex{
+      flex-basis: 50%;
+      margin: 0% 2%;
+
+      p{
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        color: white;
+        text-align: right;
+      }
+  
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .pr-flex{
+    display: flex;
+    margin: 4% 0%;
+  
+    .left-flex{
+      flex-basis: 50%;
+      margin: 0% 2%;
+
+      p{
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        color: white;
+      }
+  
+      img{
+        width: 100%;
+      }
+    }
+  
+    .right-flex{
+      flex-basis: 50%;
+      margin: 0% 2%;
+
+      p{
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        color: white;
+      }
+  
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .pro-flex{
+    display: flex;
+    margin: 4% 0%;
+  
+    .left-flex{
+      flex-basis: 50%;
+      margin: 0% 2%;
+
+      p{
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        color: white;
+      }
+  
+      img{
+        width: 100%;
+      }
+    }
+  
+    .right-flex{
+      flex-basis: 50%;
+      margin: 0% 2%;
+
+      p{
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        color: white;
+      }
+  
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .proj-flex{
+    display: flex;
+    margin: 4% 0%;
+  
+    .left-flex{
+      flex-basis: 50%;
+      margin: 0% 2%;
+
+      p{
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        color: white;
+      }
+  
+      img{
+        width: 100%;
+      }
+    }
+  
+    .right-flex{
+      flex-basis: 50%;
+      margin: 0% 2%;
+
+      p{
+        font-family: 'Source Code Pro', monospace;
+        text-transform: uppercase;
+        color: white;
+      }
+  
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.m-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+  overflow: hidden;
+  z-index: 1;
+
+    &__title {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    transform: scale(2);
+    transition: all 10s ease;
+    & > div {
+      display: flex;
+      animation: scrollText 300s infinite linear;
+    }
+    h1 {
+      font-family: 'League Gothic', sans-serif;
+      letter-spacing: 1px;
+      font-size: 180px;
+      text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
+      color: #ffffff;
+      }
+  }
+}
+
+/*div:hover {
+  animation-play-state: paused;
+}*/
+@keyframes scrollText {
+  from   { transform: translateX(0%); }
+  to { transform: translateX(-80%); }
+}
+
+.posts{
+  display: flex;
+  margin: 0% 0%;
+
+  a{
+    width: 100%;
+    margin: 0% 1%;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.con{
+  width: 100%;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  margin: 6% 0%;
+
+  img{
+    width: 24%;
+    margin: -10% 0%;
+  }
+  h2{
+    font-size: 16px;
+  }
+
+  a{
+  font-family: 'League Gothic', sans-serif;
+  font-size: 140px;
+  color: #FAFF00;
+  }
+
+  .social{
+    margin: 4% 0%;
+
+    a{
+      font-family: 'Source Code Pro', monospace;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: white;
+      padding: 0% 2%;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+
+  .con{
+
+    a{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 110px;
+    color: #FAFF00;
+    } 
+  }
+
+  .m-scroll {
+
+      h1 {
+        font-size: 140px;
+        }
+    }
+
+    .projects{
+
+      h1{
+        font-size: 300px;
+      }
+    }   
+  
+}
+
+@media (max-width: 800px) {
+
+  header .logo {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: 'League Gothic', sans-serif;
+  }
+  
+  .desktop {
+    display: block;
+    font-family: 'League Gothic', sans-serif;
+  
+    ul{
+      display: flex;
+    }
+  
+    ul > * + * {
+      margin-left: 2em;
+    }
+  
+  
+    .nav{
+      color: white;
+      font-size: 1.4rem;
+    }
+  }
+  
+  
+  .showcase video {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .all{
+    margin-top: 70%;
+  }
+
+  .about{
+  
+    h1{
+      font-size: 14px;
+    }
+    h2{
+      font-size: 14px;
+    }
+  
+    a{
+    font-size: 24px;
+    }
+  }
+
+  .projects{
+
+    h1{
+      font-size: 220px;
+    }
+  
+    .p-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 12px;
+        }
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+  
+    .pr-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 12px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+
+    .pro-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 12px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+
+    .proj-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 12px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .m-scroll {
+    width: 100%;
+    height: 36vh;
+
+      h1 {
+        font-size: 90px;
+        }
+    }  
+
+    .con{
+      h2{
+        font-size: 14px;
+      }
+    
+      a{
+      font-size: 80px;
+      }
+
+      .social{
+    
+        a{
+          font-size: 14px;
+        }
+      }
+    }
+  
+}
+
+@media (max-width: 600px) {
+
+  header .logo {
+    font-size: 1.2rem;
+  }
+  
+  .desktop {
+    display: block;
+  
+    ul{
+      display: flex;
+    }
+  
+    ul > * + * {
+      margin-left: 2em;
+    }
+  
+  
+    .nav{
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+  
+
+
+  .projects{
+    margin: 24% 0%;
+
+    h1{
+      font-size: 120px;
+    }
+  
+    .p-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 9px;
+        }
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 9px;
+        }
+      }
+    }
+  
+    .pr-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 9px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 9px;
+        }
+      }
+    }
+
+    .pro-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 9px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 9px;
+        }
+      }
+    }
+
+    .proj-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 9px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 9px;
+        }
+      }
+    }
+  }
+
+  .m-scroll {
+    width: 100%;
+    height: 24vh;
+    margin-top: -24%;
+
+      h1 {
+        font-size: 64px;
+        }
+    }  
+
+    .con{
+
+      img{
+        width: 40%;
+        margin: -16% 0%;
+      }
+      h2{
+        font-size: 12px;
+      }
+    
+      a{
+      font-size: 42px;
+      }
+        
+      .social{
+    
+        a{
+          font-size: 12px;
+        }
+      }
+    }
+  
+}
+
+@media (max-width: 320px) {
+
+  header .logo {
+    font-size: 1rem;
+    font-family: 'League Gothic', sans-serif;
+  }
+  
+  .desktop {
+    display: block;
+    font-family: 'League Gothic', sans-serif;
+  
+    ul{
+      display: flex;
+    }
+  
+    ul > * + * {
+      margin-left: 1.4em;
+    }
+  
+  
+    .nav{
+      color: white;
+      font-size: 1rem;
+    }
+  }
+  
+  
+  .showcase video {
+    position: absolute;
+    top: -24%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .all{
+    margin-top: 110%;
+  }
+
+  .about{
+    
+    img{
+      width: 40%;
+      margin: -20% 0%;
+    }
+  
+    h1{
+      font-size: 7px;
+    }
+    h2{
+      font-size: 12px;
+    }
+  
+    a{
+    font-size: 14px;
+    }
+  }
+
+  .projects{
+
+    h1{
+      font-size: 100px;
+    }
+  
+    .p-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 8px;
+        }
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 8px;
+        }
+      }
+    }
+  
+    .pr-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 8px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 8px;
+        }
+      }
+    }
+
+    .pro-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 8px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 8px;
+        }
+      }
+    }
+
+    .proj-flex{
+    
+      .left-flex{
+  
+        p{
+          font-size: 8px;
+        }    
+      }
+    
+      .right-flex{
+  
+        p{
+          font-size: 8px;
+        }
+      }
+    }
+  }
+
+  .m-scroll {
+    width: 100%;
+    height: 16vh;
+    margin-top: -20%;
+
+      h1 {
+        font-size: 42px;
+        }
+    }  
+
+    .con{
+
+      img{
+        width: 40%;
+        margin: -16% 0%;
+      }
+      h2{
+        font-size: 12px;
+      }
+    
+      a{
+      font-size: 36px;
+      }
+        
+      .social{
+    
+        a{
+          font-size: 12px;
+        }
+      }
+    }
+  
+}

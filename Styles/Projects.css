@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5% 2.4%;
+  z-index: 999;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+header .logo {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: "League Gothic", sans-serif;
+}
+
+.desktop {
+  display: block;
+  font-family: "League Gothic", sans-serif;
+}
+.desktop ul {
+  display: flex;
+}
+.desktop ul > * + * {
+  margin-left: 3em;
+}
+.desktop .nav {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.all {
+  margin-top: 65%;
+}
+
+.projects .sub {
+  display: flex;
+}
+.projects h1 {
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  font-size: 360px;
+  text-align: center;
+  margin: 8% 0%;
+}
+.projects .p-flex {
+  display: flex;
+}
+.projects .p-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .p-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .p-flex .left-flex img {
+  width: 100%;
+}
+.projects .p-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .p-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+  text-align: right;
+}
+.projects .p-flex .right-flex img {
+  width: 100%;
+}
+.projects .pr-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .pr-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .pr-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .pr-flex .left-flex img {
+  width: 100%;
+}
+.projects .pr-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .pr-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .pr-flex .right-flex img {
+  width: 100%;
+}
+.projects .pro-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .pro-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .pro-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .pro-flex .left-flex img {
+  width: 100%;
+}
+.projects .pro-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .pro-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .pro-flex .right-flex img {
+  width: 100%;
+}
+.projects .proj-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .proj-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .proj-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .proj-flex .left-flex img {
+  width: 100%;
+}
+.projects .proj-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .proj-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .proj-flex .right-flex img {
+  width: 100%;
+}
+
+.m-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.m-scroll__title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(2);
+  transition: all 10s ease;
+}
+.m-scroll__title > div {
+  display: flex;
+  animation: scrollText 300s infinite linear;
+}
+.m-scroll__title h1 {
+  font-family: "League Gothic", sans-serif;
+  letter-spacing: 1px;
+  font-size: 180px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+/*div:hover {
+  animation-play-state: paused;
+}*/
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
+.posts {
+  display: flex;
+  margin: 0% 0%;
+}
+.posts a {
+  width: 100%;
+  margin: 0% 1%;
+}
+.posts a img {
+  width: 100%;
+}
+
+.con {
+  width: 100%;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+  margin: 6% 0%;
+}
+.con img {
+  width: 24%;
+  margin: -10% 0%;
+}
+.con h2 {
+  font-size: 16px;
+}
+.con a {
+  font-family: "League Gothic", sans-serif;
+  font-size: 140px;
+  color: #FAFF00;
+}
+.con .social {
+  margin: 4% 0%;
+}
+.con .social a {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0% 2%;
+}
+
+@media (max-width: 1200px) {
+  .con a {
+    font-family: "League Gothic", sans-serif;
+    font-size: 110px;
+    color: #FAFF00;
+  }
+  .m-scroll h1 {
+    font-size: 140px;
+  }
+  .projects h1 {
+    font-size: 300px;
+  }
+}
+@media (max-width: 800px) {
+  header .logo {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop {
+    display: block;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop ul {
+    display: flex;
+  }
+  .desktop ul > * + * {
+    margin-left: 2em;
+  }
+  .desktop .nav {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .showcase video {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .all {
+    margin-top: 70%;
+  }
+  .about h1 {
+    font-size: 14px;
+  }
+  .about h2 {
+    font-size: 14px;
+  }
+  .about a {
+    font-size: 24px;
+  }
+  .projects h1 {
+    font-size: 220px;
+  }
+  .projects .p-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .p-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .pr-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .pr-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .pro-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .pro-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .proj-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .proj-flex .right-flex p {
+    font-size: 12px;
+  }
+  .m-scroll {
+    width: 100%;
+    height: 36vh;
+  }
+  .m-scroll h1 {
+    font-size: 90px;
+  }
+  .con h2 {
+    font-size: 14px;
+  }
+  .con a {
+    font-size: 80px;
+  }
+  .con .social a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  header .logo {
+    font-size: 1.2rem;
+  }
+  .desktop {
+    display: block;
+  }
+  .desktop ul {
+    display: flex;
+  }
+  .desktop ul > * + * {
+    margin-left: 2em;
+  }
+  .desktop .nav {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .projects {
+    margin: 24% 0%;
+  }
+  .projects h1 {
+    font-size: 120px;
+  }
+  .projects .p-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .p-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .pr-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .pr-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .pro-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .pro-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .proj-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .proj-flex .right-flex p {
+    font-size: 9px;
+  }
+  .m-scroll {
+    width: 100%;
+    height: 24vh;
+    margin-top: -24%;
+  }
+  .m-scroll h1 {
+    font-size: 64px;
+  }
+  .con img {
+    width: 40%;
+    margin: -16% 0%;
+  }
+  .con h2 {
+    font-size: 12px;
+  }
+  .con a {
+    font-size: 42px;
+  }
+  .con .social a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  header .logo {
+    font-size: 1rem;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop {
+    display: block;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop ul {
+    display: flex;
+  }
+  .desktop ul > * + * {
+    margin-left: 1.4em;
+  }
+  .desktop .nav {
+    color: white;
+    font-size: 1rem;
+  }
+  .showcase video {
+    position: absolute;
+    top: -24%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .all {
+    margin-top: 110%;
+  }
+  .about img {
+    width: 40%;
+    margin: -20% 0%;
+  }
+  .about h1 {
+    font-size: 7px;
+  }
+  .about h2 {
+    font-size: 12px;
+  }
+  .about a {
+    font-size: 14px;
+  }
+  .projects h1 {
+    font-size: 100px;
+  }
+  .projects .p-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .p-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .pr-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .pr-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .pro-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .pro-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .proj-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .proj-flex .right-flex p {
+    font-size: 8px;
+  }
+  .m-scroll {
+    width: 100%;
+    height: 16vh;
+    margin-top: -20%;
+  }
+  .m-scroll h1 {
+    font-size: 42px;
+  }
+  .con img {
+    width: 40%;
+    margin: -16% 0%;
+  }
+  .con h2 {
+    font-size: 12px;
+  }
+  .con a {
+    font-size: 36px;
+  }
+  .con .social a {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=Projects.css.map */
